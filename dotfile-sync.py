@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # Downloaded from http://gist.github.com/490016
 
-"""Script that I keep in a Git repository along with my dotfiles. In the 
+"""Script that I keep in a Git repository along with my dotfiles. In the
 repository, the files don't have the dot prefix so I can see them more easily.
-Running the script symlinks all the files to ~/.<filename>, checking allowing 
+Running the script symlinks all the files to ~/.<filename>, checking allowing
 you to cancel if the file exists.
 """
 
@@ -19,7 +19,7 @@ def force_remove(path):
     else:
         os.unlink(path)
 
-def is_link_to(link, dest): 
+def is_link_to(link, dest):
     is_link = os.path.islink(link)
     is_link = is_link and os.readlink(link).rstrip('/') == dest.rstrip('/')
     return is_link
