@@ -1,0 +1,8 @@
+# vim backups
+*.swp
+
+# Eclipse project files
+.project
+.cproject
+.autotools
+.settings

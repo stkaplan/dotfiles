@@ -1,0 +1,23 @@
+[color]
+	ui = true
+[user]
+	name = Sam Kaplan
+	email = stkaplan@gmail.com
+[alias]
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
+    serve = !git daemon --reuseadder --verbose --base-path=. --export-all ./.git
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
+	unstage = reset HEAD --
+	staged = diff --cached
+[color "diff"]
+	new = cyan bold
+	old = red bold
+	meta = green bold
+	frag = yellow bold
+[core]
+	excludesfile = /home/skaplan/.gitignore
+[web]
+	browser = firefox
