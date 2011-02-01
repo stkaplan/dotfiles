@@ -1,0 +1,43 @@
+[alias]
+latest  = log --limit 5
+glatest = glog --limit 10
+ls      = locate '*' -I .
+
+[defaults]
+
+[diff]
+git = true
+
+[extdiff]
+cmd.kdiff3 =
+
+[extensions]
+color =
+mq    =
+hgext.extdiff =
+hgext.purge =
+rebase =
+hgext.graphlog =
+hgext.convert =
+
+[color]
+status.modified = red bold
+status.added    = cyan bold
+status.removed  = magenta bold
+status.deleted  = red_background bold
+status.unknown  = blue bold
+status.ignored  = none
+
+diff.diffline = green bold
+diff.extended = magenta bold
+diff.file_a   = green bold
+diff.file_b   = green bold
+diff.hunk     = yellow bold
+diff.deleted  = red bold
+diff.inserted = cyan bold
+diff.changed  = white bold
+diff.trailingwhitespace = none
+
+[ui]
+editor   = vim
+username = Sam Kaplan <stkaplan@gmail.com>
