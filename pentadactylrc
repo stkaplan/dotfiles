@@ -1,0 +1,6 @@
+"1.0b3 (created: 2010/11/06 12:31:35)
+
+set guioptions=rbCmTs
+set runtimepath=~/.pentadactyl
+
+" vim: set ft=pentadactyl:
