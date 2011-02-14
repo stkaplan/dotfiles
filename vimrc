@@ -9,14 +9,14 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
-set autoindent      " start line at same indentation as previous line 
+set autoindent      " start line at same indentation as previous line
 set backspace=indent,eol,start   " allow backspacing over these
 set showmatch       " brief jump to matching bracket
 
 set showmode        " show if in INSERT mode
-set showcmd         " show command being typed 
+set showcmd         " show command being typed
 set ruler           " show line and column of cursor
-set scrolloff=3     " 3 lines above or below cursor 
+set scrolloff=3     " 3 lines above or below cursor
 set laststatus=2    " always show status bar at bottom
 
 set wildmode=list:longest,full  " do bash-style tab-completion
