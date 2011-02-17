@@ -1,17 +1,24 @@
 #!/usr/bin/env ruby
 
 git_bundles = [
+# Easy commenting file many file types
   "git://github.com/scrooloose/nerdcommenter.git",
+# File explorer tree view
   "git://github.com/scrooloose/nerdtree.git",
+# Support Textmate-style snippets
   "git://github.com/msanders/snipmate.vim.git",
+# Wrapper for git commands
   "git://github.com/tpope/vim-fugitive.git",
-  "git://github.com/tpope/vim-git.git",
+# Syntax highlighting for Markdown
   "git://github.com/tpope/vim-markdown.git",
-  "git://github.com/tpope/vim-repeat.git",
+# Easy manipulation of parentheses, brackets, etc.
   "git://github.com/tpope/vim-surround.git",
+# Allow repeating of commands from vim-surround with .
+  "git://github.com/tpope/vim-repeat.git",
 ]
 
 vim_org_scripts = [
+# Easily switch between source and header files
   ["a.vim", 7218, "plugin"],
 ]
 
