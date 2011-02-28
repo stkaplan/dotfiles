@@ -123,3 +123,5 @@ alias svnl="svn status --no-ignore |
 export PATH=/usr/local/bin:/home/skaplan/android-sdk-linux_86/tools:$PATH
 export LD_LIBRARY_PATH=/usr/lib/jvm/java-6-sun/jre/lib/amd64/server:$LD_LIBRARY_PATH
 
+export EDITOR='vim'
+export VISUAL=$EDITOR
