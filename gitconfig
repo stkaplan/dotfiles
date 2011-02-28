@@ -12,6 +12,9 @@
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
 	unstage = reset HEAD --
 	staged = diff --cached
+    out = log --oneline origin..HEAD
+    in = log --oneline HEAD..origin
+    aliases = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'
 [color "diff"]
 	new = cyan bold
 	old = red bold
