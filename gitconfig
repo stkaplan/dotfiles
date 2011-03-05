@@ -8,7 +8,7 @@
 	ci = commit
 	br = branch
 	co = checkout
-    serve = !git daemon --reuseadder --verbose --base-path=. --export-all ./.git
+    serve = !git daemon --detach --reuseaddr --base-path=. --export-all ./.git
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
 	unstage = reset HEAD --
 	staged = diff --cached
