@@ -10,6 +10,7 @@
 	co = checkout
     serve = !git daemon --detach --reuseaddr --base-path=. --export-all ./.git
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
+    wdiff = diff --color-words
 	unstage = reset HEAD --
 	staged = diff --cached
     aliases = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'
