@@ -120,7 +120,7 @@ alias svnl="svn status --no-ignore |
             grep -v -e "\.hg" -e "\.hgignore" -e "\.git" -e "\.gitignore" -e ".*\.swp" \
                 -e "\.cproject" -e "\.project" -e "\.autotools" -e "\.settings""
 
-export PATH=/usr/local/bin:/home/skaplan/android-sdk-linux_86/tools:$PATH
+export PATH=/usr/local/bin:~/android-sdk-linux_x86/tools:$PATH
 export LD_LIBRARY_PATH=/usr/lib/jvm/java-6-sun/jre/lib/amd64/server:$LD_LIBRARY_PATH
 
 export EDITOR='vim'
