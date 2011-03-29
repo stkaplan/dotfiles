@@ -17,6 +17,8 @@ git_bundles = [
   "git://github.com/tpope/vim-repeat.git",
 # Easily switch between source and header files
   "git://github.com/vim-scripts/a.vim.git",
+# Add motion to move between words in CamelCaseIdentifiers
+  "git://github.com/vim-scripts/camelcasemotion.git",
 ]
 
 vim_org_scripts = [
