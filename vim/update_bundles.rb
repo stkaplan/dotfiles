@@ -15,11 +15,11 @@ git_bundles = [
   "git://github.com/tpope/vim-surround.git",
 # Allow repeating of commands from vim-surround with .
   "git://github.com/tpope/vim-repeat.git",
+# Easily switch between source and header files
+  "git://github.com/vim-scripts/a.vim.git",
 ]
 
 vim_org_scripts = [
-# Easily switch between source and header files
-  ["a.vim", 7218, "plugin"],
 ]
 
 require 'fileutils'
