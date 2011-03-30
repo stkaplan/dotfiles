@@ -6,7 +6,11 @@ git_bundles = [
 # File explorer tree view
   "git://github.com/scrooloose/nerdtree.git",
 # Support Textmate-style snippets
-  "git://github.com/msanders/snipmate.vim.git",
+  "git://github.com/garbas/vim-snipmate.git",
+# Dependency for vim-snipmate
+  "git://github.com/tomtom/tlib_vim.git",
+# Dependency for vim-snipmate
+  "git://github.com/MarcWeber/vim-addon-mw-utils.git",
 # Wrapper for git commands
   "git://github.com/tpope/vim-fugitive.git",
 # Syntax highlighting for Markdown
