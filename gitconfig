@@ -22,6 +22,10 @@
     old = red bold
     meta = green bold
     frag = yellow bold
+[color "grep"]
+    filename = magenta
+    function = yellow
+    linenumber = green
 [core]
     excludesfile = ~/.gitignore
 [web]
