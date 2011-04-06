@@ -29,5 +29,7 @@
     linenumber = green
 [core]
     excludesfile = ~/.gitignore
+[diff]
+    renames = copies
 [web]
     browser = firefox
