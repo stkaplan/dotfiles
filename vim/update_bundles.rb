@@ -25,6 +25,8 @@ git_bundles = [
   "git://github.com/vim-scripts/camelcasemotion.git",
 # Tasklist to display TODOs, FIXMEs, etc in current file
   "git://github.com/vim-scripts/TaskList.vim.git",
+# Custom motion for function arguments
+  "git://github.com/vim-scripts/argtextobj.vim.git",
 ]
 
 vim_org_scripts = [
