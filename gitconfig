@@ -18,6 +18,8 @@
     track = add --intent-to-add
     untrack = rm --cached
     aliases = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'
+[blame]
+    date = relative
 [color "diff"]
     new = cyan bold
     old = red bold
