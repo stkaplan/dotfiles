@@ -16,6 +16,7 @@
     unstage = reset HEAD
     staged = diff --cached
     track = add --intent-to-add
+    untrack = rm --cached
     aliases = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'
 [color "diff"]
     new = cyan bold
