@@ -126,7 +126,3 @@ export LD_LIBRARY_PATH=/usr/lib/jvm/java-6-sun/jre/lib/amd64/server:$LD_LIBRARY_
 export EDITOR='vim'
 export VISUAL=$EDITOR
 
-ssht()
-{
-    ssh $1 -t ssh $2
-}
