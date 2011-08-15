@@ -14,6 +14,7 @@ cmd.kdiff3 =
 [extensions]
 color =
 mq    =
+pager =
 hgext.extdiff =
 hgext.purge =
 rebase =
@@ -37,6 +38,9 @@ diff.deleted  = red bold
 diff.inserted = cyan bold
 diff.changed  = white bold
 diff.trailingwhitespace = none
+
+[pager]
+pager = LESS='FSRX' less
 
 [ui]
 editor   = vim
