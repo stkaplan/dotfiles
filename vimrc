@@ -63,4 +63,6 @@ au BufNewFile,BufRead *.td set filetype=tablegen
 set undodir=~/.vim/undodir
 set undofile
 
+" better-looking completion menus
+highlight PMenuSel cterm=reverse
 
