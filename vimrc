@@ -63,19 +63,4 @@ au BufNewFile,BufRead *.td set filetype=tablegen
 set undodir=~/.vim/undodir
 set undofile
 
-" New in 7.3
-" set relativenumber
 
-" The rest are from my old .vimrc, need to look at them more closely
-" automatically save/load folds
-"autocmd BufWinLeave * silent! mkview
-"autocmd BufWinEnter * silent! loadview
-
-"highlight PMenuSel cterm=reverse
-
-" for OmniCppComplete
-"filetype plugin on
-"set tags+=~/.vim/commontags
-"map <S-F12> :!ctags -R .<CR>
-"let OmniCpp_NamespaceSearch=2
-"let OmniCpp_ShowProtoTypeInAbbr=1
