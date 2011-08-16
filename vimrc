@@ -1,8 +1,9 @@
+source ~/.vim/bundle/vim-pathogen/autoload/pathogen.vim
+call pathogen#infect()
+
 " toggle filetype off and on: needed for certain plugins
 filetype off
 filetype indent plugin on
-
-call pathogen#runtime_append_all_bundles()
 
 set nocompatible    " vanilla vi: not even once
 

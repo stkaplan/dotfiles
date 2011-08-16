@@ -6,3 +6,6 @@
 .cproject
 .autotools
 .settings
+
+# ctags, vim helptags, etc.
+tags
