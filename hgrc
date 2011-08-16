@@ -13,6 +13,7 @@ cmd.kdiff3 =
 
 [extensions]
 color =
+fetch =
 mq    =
 pager =
 hgext.extdiff =
