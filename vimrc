@@ -66,3 +66,5 @@ set undofile
 " better-looking completion menus
 highlight PMenuSel cterm=reverse
 
+" mapping to remove trailing whitespace in current file
+nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
