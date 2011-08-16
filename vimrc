@@ -57,9 +57,12 @@ au BufNewFile,BufRead *.ll set filetype=llvm
 " .td files should use tablegen syntax highlighting
 au BufNewFile,BufRead *.td set filetype=tablegen
 
+" Persisent undo
+set undodir=~/.vim/undodir
+set undofile
+
 " New in 7.3
 " set relativenumber
-" set undofile
 
 " The rest are from my old .vimrc, need to look at them more closely
 " automatically save/load folds
