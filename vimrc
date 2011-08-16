@@ -4,6 +4,8 @@ filetype indent plugin on
 
 call pathogen#runtime_append_all_bundles()
 
+set nocompatible    " vanilla vi: not even once
+
 " tab settings: expand to 4 spaces
 set tabstop=4
 set shiftwidth=4
