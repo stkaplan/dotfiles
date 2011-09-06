@@ -41,7 +41,8 @@ diff.changed  = white bold
 diff.trailingwhitespace = none
 
 [pager]
-pager = LESS='FSRX' less
+pager  = LESS='FSRX' less
+attend =
 
 [ui]
 editor   = vim
