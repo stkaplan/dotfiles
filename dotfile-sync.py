@@ -10,7 +10,7 @@ you to cancel if the file exists.
 import os
 import glob
 
-EXCLUDE = ['install.py', 'dotfile-sync.py']
+EXCLUDE = ['install.py', 'dotfile-sync.py', '.gitmodules']
 NO_DOT_PREFIX = ['bin']
 
 def force_remove(path):
