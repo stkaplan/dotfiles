@@ -4,7 +4,7 @@
     name = Sam Kaplan
     email = stkaplan@gmail.com
 [alias]
-    st = status
+    st = status -s
     ci = commit --verbose
     ca = commit --verbose --all
     amend = commit --verbose --amend
