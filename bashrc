@@ -126,6 +126,8 @@ export LD_LIBRARY_PATH=/usr/lib/jvm/java-6-sun/jre/lib/amd64/server:$LD_LIBRARY_
 export EDITOR='vim'
 export VISUAL=$EDITOR
 
+bind Space:magic-space
+
 mkcd()
 {
     mkdir -p "$1" && cd "$1"
