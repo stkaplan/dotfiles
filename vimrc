@@ -69,3 +69,7 @@ highlight PMenuSel cterm=reverse
 
 " mapping to remove trailing whitespace in current file
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
+
+" Turn on folding for XML files
+let g:xml_syntax_folding=1
+au FileType xml setlocal foldmethod=syntax
