@@ -42,7 +42,6 @@ diff.trailingwhitespace = none
 
 [pager]
 pager  = LESS='FSRX' less
-attend =
 
 [ui]
 editor   = vim
