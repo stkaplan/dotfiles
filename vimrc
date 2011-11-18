@@ -74,7 +74,7 @@ au BufNewFile,BufRead *.ll set filetype=llvm
 au BufNewFile,BufRead *.td set filetype=tablegen
 
 " Persisent undo
-set undodir=~/.vim/tmp/undodir//
+set undodir=~/.vim/tmp/undo//
 set undofile
 
 set backupdir=~/.vim/tmp/backup//
@@ -153,3 +153,14 @@ set statusline+=\ (line\ %l\/%L,\ col\ %03c)
 
 let g:syntastic_enable_signs = 1
 let g:syntastic_stl_format = '[%E{Error 1/%e: line %fe}%B{, }%W{Warning 1/%w: line %fw}]'
+
+" Fugitive mappings
+nnoremap <leader>gd :Gdiff<cr>
+nnoremap <leader>gs :Gstatus<cr>
+nnoremap <leader>gw :Gwrite<cr>
+nnoremap <leader>ga :Gadd<cr>
+nnoremap <leader>gb :Gblame<cr>
+nnoremap <leader>gco :Gcheckout<cr>
+nnoremap <leader>gci :Gcommit<cr>
+nnoremap <leader>gm :Gmove<cr>
+nnoremap <leader>gr :Gremove<cr>
