@@ -115,3 +115,6 @@ noremap <leader>v <C-w>v
 
 " Reduce pinky strain
 nnoremap ; :
+
+" Shortcut to toggle rainbow parentheses
+nnoremap <leader>R :RainbowParenthesesToggle<cr>
