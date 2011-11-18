@@ -52,3 +52,6 @@
 [submodule "vim/bundle/syntastic"]
 	path = vim/bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
+[submodule "vim/bundle/linediff.vim"]
+	path = vim/bundle/linediff.vim
+	url = git://github.com/AndrewRadev/linediff.vim.git
