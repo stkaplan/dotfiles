@@ -139,6 +139,9 @@ set statusline+=%*                           " Reset highlighting.
 
 set statusline+=%=   " Right align.
 
+" Git status from fugitive
+set statusline+=%{fugitive#statusline()}\ 
+
 " File format, encoding and type.  Ex: "(unix/utf-8/python)"
 set statusline+=(
 set statusline+=%{&ff}                        " Format (unix/DOS).
