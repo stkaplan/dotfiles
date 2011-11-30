@@ -72,6 +72,8 @@ set mouse=a         " mouse support in all modes
 au BufNewFile,BufRead *.ll set filetype=llvm
 " .td files should use tablegen syntax highlighting
 au BufNewFile,BufRead *.td set filetype=tablegen
+" .xe_asm files should use asm syntax highliting
+au BufNewFile,BufRead *.xe_asm set filetype=asm
 
 " Persisent undo
 set undodir=~/.vim/tmp/undo//
