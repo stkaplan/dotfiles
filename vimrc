@@ -173,3 +173,6 @@ nnoremap <leader>gr :Gremove<cr>
 " Linediff mappings
 vnoremap <leader>l :Linediff<cr>
 nnoremap <leader>L :LinediffReset<cr>
+
+" remap TaskList to avoid conflict with Command-T
+map <leader>T <Plug>TaskList
