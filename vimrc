@@ -174,7 +174,7 @@ nnoremap <leader>gr :Gremove<cr>
 vnoremap <leader>l :Linediff<cr>
 nnoremap <leader>L :LinediffReset<cr>
 
-" remap TaskList to avoid conflict with Command-T
+" Remap TaskList to avoid conflict with Command-T
 map <leader>T <Plug>TaskList
 
 " Show name of current C function
@@ -187,3 +187,7 @@ fun! ShowFuncName()
     call search("\\%" . lnum . "l" . "\\%" . col . "c")
 endfun
 map <leader>f :call ShowFuncName() <CR>
+
+" Don't exit visual mode after shifting
+vnoremap < <gv
+vnoremap > >gv
