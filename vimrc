@@ -176,3 +176,14 @@ nnoremap <leader>L :LinediffReset<cr>
 
 " remap TaskList to avoid conflict with Command-T
 map <leader>T <Plug>TaskList
+
+" Show name of current C function
+fun! ShowFuncName()
+    let lnum = line(".")
+    let col = col(".")
+    echohl ModeMsg
+    echo getline(search("^[^ \t#/]\\{2}.*[^:]\s*$", 'bW'))
+    echohl None
+    call search("\\%" . lnum . "l" . "\\%" . col . "c")
+endfun
+map <leader>f :call ShowFuncName() <CR>
