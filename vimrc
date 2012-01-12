@@ -100,10 +100,6 @@ match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 " Ye shall be judged
 iabbrev ldis ಠ_ಠ
 
-" Use sane regexes
-nnoremap / /\v
-vnoremap / /\v
-
 " Quick jump to beginning or end of line
 noremap H ^
 noremap L g_
