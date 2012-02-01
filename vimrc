@@ -163,3 +163,8 @@ vnoremap > >gv
 " Options for powerline
 set t_Co=256
 let g:Powerline_symbols = 'unicode'
+
+" Hit F8 to toggle Taglist
+nnoremap <silent> <F8> :TlistToggle<CR>
+" Only show active file in Taglist
+let g:Tlist_Show_One_File=1
