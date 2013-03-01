@@ -27,7 +27,7 @@ set wildmenu        " pop-up menu when multiple matches for tab-completion
 set wildignore+=.git,.hg,.svn       " version control files
 set wildignore+=*.aux,*.out,*.toc   " LaTeX intermediate files
 set wildignore+=*.o,*.so,*.a        " object files
-set wildignore+=*.sw?               " vim swap files
+set wildignore+=*.swp,*.swo         " vim swap files
 
 set nohls           " don't highlight search results
 set ignorecase      " search is case-insensitive
@@ -42,18 +42,6 @@ set splitright      " make :vsplit create the new window on right
 
 " resize splits when window is resized
 au VimResized * exe "normal! \<c-w>="
-
-" disable arrow keys in normal mode (use hjkl instead)
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-
-" disable arrow keys in insert mode (go back to normal mode instead)
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
 
 " go up/down by a screen line instead of by text line
 nnoremap j gj
@@ -74,6 +62,10 @@ au BufNewFile,BufRead *.ll set filetype=llvm
 au BufNewFile,BufRead *.td set filetype=tablegen
 " .xe_asm files should use asm syntax highliting
 au BufNewFile,BufRead *.xe_asm set filetype=asm
+" swarm2c files should use C syntax highlighting
+au BufNewFile,BufRead *.swc set filetype=c
+au BufNewFile,BufRead *.swh set filetype=c
+
 
 " Persisent undo
 set undodir=~/.vim/tmp/undo//
@@ -159,6 +151,9 @@ map <leader>f :call ShowFuncName() <CR>
 " Don't exit visual mode after shifting
 vnoremap < <gv
 vnoremap > >gv
+
+" Return to normal mode on FocusLost
+au FocusLost * call feedkeys("\<C-\>\<C-n>")
 
 " Options for powerline
 set t_Co=256

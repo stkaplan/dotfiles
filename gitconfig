@@ -18,6 +18,9 @@
     track = add --intent-to-add
     untrack = rm --cached
     aliases = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'
+    ignored = ls-files --others -i --exclude-standard
+    smup = submodule update --recursive
+    vimdiff = difftool --tool=vimdiff --no-prompt
 [blame]
     date = relative
 [color "diff"]
@@ -33,6 +36,7 @@
     excludesfile = ~/.gitignore
 [diff]
     renames = copies
+    renamelimit = 100000
 [web]
     browser = firefox
 [log]
