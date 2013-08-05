@@ -21,6 +21,7 @@
     ignored = ls-files --others -i --exclude-standard
     smup = submodule update --recursive
     vimdiff = difftool --tool=vimdiff --no-prompt
+    cdiff = diff --color-words --word-diff-regex='([[:alnum:]]|_)+|[^[:space:]]'
 [blame]
     date = relative
 [color "diff"]
@@ -41,3 +42,5 @@
     browser = firefox
 [log]
 	date = local
+[push]
+	default = simple

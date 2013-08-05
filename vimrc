@@ -106,6 +106,10 @@ noremap <leader>v <C-w>v
 " Reduce pinky strain
 nnoremap ; :
 
+" Easily create blank lines
+nnoremap <Enter> o<ESC>
+nnoremap <S-Enter> O<ESC>
+
 " Shortcut to toggle rainbow parentheses
 nnoremap <leader>R :RainbowParenthesesToggle<cr>
 
