@@ -58,9 +58,9 @@
 [submodule "vim/bundle/Command-T"]
 	path = vim/bundle/Command-T
 	url = git://github.com/wincent/Command-T.git
-[submodule "vim/bundle/snipmate-snippets"]
-	path = vim/bundle/snipmate-snippets
-	url = git://github.com/honza/snipmate-snippets.git
+[submodule "vim/bundle/vim-snippets"]
+	path = vim/bundle/vim-snippets
+	url = https://github.com/honza/vim-snippets.git
 [submodule "vim/bundle/taglist.vim"]
 	path = vim/bundle/taglist.vim
 	url = git://github.com/vim-scripts/taglist.vim.git
