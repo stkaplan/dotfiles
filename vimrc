@@ -161,7 +161,18 @@ au FocusLost * call feedkeys("\<C-\>\<C-n>")
 
 " Options for powerline
 set t_Co=256
-let g:Powerline_symbols = 'unicode'
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_linecolumn_prefix = '␊ '
+let g:airline_linecolumn_prefix = '␤ '
+let g:airline_linecolumn_prefix = '¶ '
+let g:airline_branch_prefix = '⎇ '
+let g:airline_paste_symbol = 'ρ'
+let g:airline_paste_symbol = 'Þ'
+let g:airline_paste_symbol = '∥'
+let g:airline_whitespace_symbol = 'Ξ'
 
 " Hit F8 to toggle Taglist
 nnoremap <silent> <F8> :TlistToggle<CR>
