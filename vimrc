@@ -178,3 +178,6 @@ let g:airline_whitespace_symbol = 'Ξ'
 nnoremap <silent> <F8> :TlistToggle<CR>
 " Only show active file in Taglist
 let g:Tlist_Show_One_File=1
+
+" Don't let ctrlp go up to .git dir -- too many files!
+let g:ctrlp_working_path_mode = '0'
