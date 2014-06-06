@@ -181,3 +181,34 @@ let g:Tlist_Show_One_File=1
 
 " Don't let ctrlp go up to .git dir -- too many files!
 let g:ctrlp_working_path_mode = '0'
+
+" Scale syntax highlighting based on /usr/share/vim/vim73/syntax/c.vim.
+au BufNewFile,BufRead *.{swh,swc} set filetype=c
+au BufNewFile,BufRead *.{swh,swc} syn keyword cStorageClass swarm_abstract
+au BufNewFile,BufRead *.{swh,swc} syn keyword cError        swarm_callback
+au BufNewFile,BufRead *.{swh,swc} syn keyword cOperator     swarm_cargs
+au BufNewFile,BufRead *.{swh,swc} syn keyword cStorageClass swarm_codelet
+au BufNewFile,BufRead *.{swh,swc} syn keyword cError        swarm_codelet_function
+au BufNewFile,BufRead *.{swh,swc} syn keyword cStorageClass swarm_ctor
+au BufNewFile,BufRead *.{swh,swc} syn keyword cStorageClass swarm_ctor_constexpr
+au BufNewFile,BufRead *.{swh,swc} syn keyword cStorageClass swarm_dtor
+au BufNewFile,BufRead *.{swh,swc} syn keyword cOperator     swarm_enter
+au BufNewFile,BufRead *.{swh,swc} syn keyword cStorageClass swarm_interface
+au BufNewFile,BufRead *.{swh,swc} syn keyword cStorageClass swarm_final
+au BufNewFile,BufRead *.{swh,swc} syn keyword cStorageClass swarm_procedure
+au BufNewFile,BufRead *.{swh,swc} syn keyword cStatement    swarm_return
+au BufNewFile,BufRead *.{swh,swc} syn keyword cStructure    swarm_type
+au BufNewFile,BufRead *.{swh,swc} syn keyword cStorageClass swarm_virtual
+au BufNewFile,BufRead *.{swh,swc} syn keyword cPreProc      SWARM_CONFIG
+au BufNewFile,BufRead *.{swh,swc} syn keyword cPreProc      SWARM_EXTENDS
+au BufNewFile,BufRead *.{swh,swc} syn keyword cPreProc      SWARM_EXTENDS_INTERFACE
+au BufNewFile,BufRead *.{swh,swc} syn keyword cPreProc      SWARM_HLTYPE
+au BufNewFile,BufRead *.{swh,swc} syn keyword cPreProc      SWARM_HLTYPE_FORWARD
+au BufNewFile,BufRead *.{swh,swc} syn keyword cPreProc      SWARM_INTERFACE
+" These are like "this" in /usr/share/vim/vim73/syntax/cpp.vim.
+au BufNewFile,BufRead *.{swh,swc} syn keyword cStatement    swarm_context
+au BufNewFile,BufRead *.{swh,swc} syn keyword cStatement    swarm_env
+au BufNewFile,BufRead *.{swh,swc} syn keyword cStatement    swarm_input
+au BufNewFile,BufRead *.{swh,swc} syn keyword cStatement    swarm_next
+au BufNewFile,BufRead *.{swh,swc} syn keyword cStatement    swarm_next_this
+au BufNewFile,BufRead *.{swh,swc} syn keyword cStatement    swarm_this
