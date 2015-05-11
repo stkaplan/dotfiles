@@ -55,6 +55,11 @@ else
 endif
 
 set mouse=a         " mouse support in all modes
+if has('mouse_sgr')
+    set ttymouse=sgr
+else
+    set ttymouse=xterm2
+end
 
 " .ll files should use llvm syntax highlighting
 au BufNewFile,BufRead *.ll set filetype=llvm
