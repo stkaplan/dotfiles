@@ -22,6 +22,10 @@
     smup = submodule update --recursive
     vimdiff = difftool --tool=vimdiff --no-prompt
     cdiff = diff --color-words --word-diff-regex='([[:alnum:]]|_)+|[^[:space:]]'
+    cshow = show --color-words --word-diff-regex='([[:alnum:]]|_)+|[^[:space:]]'
+    fixup = !sh -c 'git commit --fixup=$1' -
+    squash = !sh -c 'git commit --squash=$1' -
+    ri = rebase --interactive --autosquash
 [blame]
     date = relative
 [color "diff"]
@@ -35,6 +39,7 @@
     linenumber = green
 [core]
     excludesfile = ~/.gitignore
+	tructctime = false
 [diff]
     renames = copies
     renamelimit = 100000
