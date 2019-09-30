@@ -115,9 +115,6 @@ nnoremap ; :
 nnoremap <Enter> o<ESC>
 nnoremap <S-Enter> O<ESC>
 
-" Shortcut to toggle rainbow parentheses
-nnoremap <leader>R :RainbowParenthesesToggle<cr>
-
 augroup ft_statuslinecolor
     au!
 
@@ -125,26 +122,9 @@ augroup ft_statuslinecolor
     au InsertLeave * hi StatusLine ctermfg=130 guifg=#CD5907
 augroup END
 
-let g:syntastic_enable_signs = 1
-let g:syntastic_stl_format = '[%E{Error 1/%e: line %fe}%B{, }%W{Warning 1/%w: line %fw}]'
-
-" Fugitive mappings
-nnoremap <leader>gd :Gdiff<cr>
-nnoremap <leader>gs :Gstatus<cr>
-nnoremap <leader>gw :Gwrite<cr>
-nnoremap <leader>ga :Gadd<cr>
-nnoremap <leader>gb :Gblame<cr>
-nnoremap <leader>gco :Gcheckout<cr>
-nnoremap <leader>gci :Gcommit<cr>
-nnoremap <leader>gm :Gmove<cr>
-nnoremap <leader>gr :Gremove<cr>
-
 " Linediff mappings
 vnoremap <leader>l :Linediff<cr>
 nnoremap <leader>L :LinediffReset<cr>
-
-" Remap TaskList to avoid conflict with Command-T
-map <leader>T <Plug>TaskList
 
 " Show name of current C function
 fun! ShowFuncName()
@@ -179,10 +159,3 @@ let g:airline_paste_symbol = 'Þ'
 let g:airline_paste_symbol = '∥'
 let g:airline_whitespace_symbol = 'Ξ'
 
-" Hit F8 to toggle Taglist
-nnoremap <silent> <F8> :TlistToggle<CR>
-" Only show active file in Taglist
-let g:Tlist_Show_One_File=1
-
-" Don't let ctrlp go up to .git dir -- too many files!
-let g:ctrlp_working_path_mode = '0'
