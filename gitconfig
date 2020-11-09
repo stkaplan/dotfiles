@@ -40,12 +40,18 @@
 [core]
     excludesfile = ~/.gitignore
 	tructctime = false
+    #pager = "/usr/share/doc/git/contrib/diff-highlight/diff-highlight | less -r"
 [diff]
     renames = copies
     renamelimit = 100000
+    submodule = log
 [web]
     browser = firefox
 [log]
 	date = local
 [push]
 	default = simple
+[gitreview]
+	remote = origin
+[merge]
+	tool = vimdiff

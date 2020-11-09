@@ -40,6 +40,9 @@ set nomodeline      " I never use these, and it sometimes breaks git commits
 set splitbelow      " make :split create the new window below
 set splitright      " make :vsplit create the new window on right
 
+" fix Windows bug with :2R in new windows
+set t_u7=
+
 " resize splits when window is resized
 au VimResized * exe "normal! \<c-w>="
 
@@ -70,7 +73,6 @@ au BufNewFile,BufRead *.xe_asm set filetype=asm
 " swarm2c files should use C syntax highlighting
 au BufNewFile,BufRead *.swc set filetype=c
 au BufNewFile,BufRead *.swh set filetype=c
-
 
 " Persisent undo
 set undodir=~/.vim/tmp/undo//
